@@ -1,6 +1,6 @@
 package tugas6;
 
-public class Exception {
+public class ClassException {
     public int error(int a) {
         try {
             umur(a);

@@ -11,7 +11,7 @@ public class TryCatch {
         System.out.print("Umur = ");
         try {
             String ageStr = userInput.nextLine();
-            Exception err = new Exception();
+            ClassException err = new ClassException();
             int age = err.error(Integer.parseInt(ageStr));           
             System.out.printf("Nama saya %s, umur saya %d tahun.", name,age);
         } catch (NumberFormatException e) {

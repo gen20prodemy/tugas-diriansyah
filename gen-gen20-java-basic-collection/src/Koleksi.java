@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class App {
+public class Koleksi {
     public static void main(String[] args) throws IOException {
         FileReader fileReader = new FileReader("src/input.txt");
         BufferedReader bufferedReader = new BufferedReader(fileReader);

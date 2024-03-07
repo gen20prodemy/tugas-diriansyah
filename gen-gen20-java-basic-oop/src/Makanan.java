@@ -17,7 +17,11 @@ public class Makanan {
 
     public Makanan(String nama){
         this.nama = nama;
-        this.harga = 100;
+        if(Makanan.getListHargaMakanan(nama.toUpperCase()) == null){
+            this.harga = 100;
+        } else {
+            this.harga = Makanan.getListHargaMakanan(nama.toUpperCase());
+        }
         Makanan.listHargaMakanan.put(this.nama.toUpperCase(), this.harga);
     }
 

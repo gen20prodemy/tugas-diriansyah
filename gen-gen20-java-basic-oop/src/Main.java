@@ -53,13 +53,16 @@ public class Main {
         Makanan.hapusElemenListMakanan("Lobak");
         Makanan.hapusElemenListMakanan("Apel");
         System.out.println();
+
         System.out.println("Lihat list makanan setelah hapus elemen");
         Makanan.infoListMakanan();
         System.out.println();
+
         System.out.println("Test Masukkan daftar list makanan");
         Makanan.setListHargaMakanan("Labu", 800);
         Makanan.setListHargaMakanan("Nanas", 1000);
         System.out.println();
+        
         System.out.println("Lihat list makanan setelah ditambahkan");
         Makanan.infoListMakanan();
     }

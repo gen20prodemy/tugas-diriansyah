@@ -1,12 +1,9 @@
 import java.util.Map;
-// import java.util.Set;
 import java.util.HashMap;
-// import java.util.HashSet;
 
 public class Makanan {
     public String nama;
     protected Integer harga;
-    // private static Set<String> listMakanan = new HashSet<String>();
     private static Map<String, Integer> listHargaMakanan = new HashMap<>();
 
     public Makanan(String nama, Integer harga){

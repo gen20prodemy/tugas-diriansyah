@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Data</title>
+</head>
+<body>
+    <form  th:object="${produk}" method="post" th:action="@{/tabel/save}">
+        <label for="id">Id</label>
+        <input type="number" id="id" th:field="*{id}"><br>
+        <label for="nama">Nama</label>
+        <input type="text" id="nama" th:field="*{nama}"><br>
+        <label for="harga">Harga</label>
+        <input type="number" id="harga" th:field="*{harga}"><br>
+        <label for="stok">Stok</label>
+        <input type="number" id="stok" th:field="*{stok}"><br>
+
+        <button type="submit">Kirim</button>
+    </form>
+</body>
+</html>

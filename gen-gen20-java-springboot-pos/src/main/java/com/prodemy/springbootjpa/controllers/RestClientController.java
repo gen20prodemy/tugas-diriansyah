@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -23,8 +24,10 @@ public class RestClientController {
     @Autowired
     private RestClientService restClientService;
 
-    @GetMapping("/province")
+    // @GetMapping("/province")
+    @Scheduled(cron = "*/30 * * * * *")
     public ResponseEntity<String> getProvinceStr() {
+        System.out.println(restClientService);
         return restClientService.getProvinceString();
     }
 

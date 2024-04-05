@@ -6,12 +6,14 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.prodemy.springbootjpa.respon.AuthenticationResponse;
+import com.prodemy.springbootjpa.request.AuthenticationRequest;
+import com.prodemy.springbootjpa.request.RegisterRequest;
+import com.prodemy.springbootjpa.response.AuthenticationResponse;
 import com.prodemy.springbootjpa.services.AuthenticationService;
-import com.prodemy.springbootjpa.utils.AuthenticationRequest;
-import com.prodemy.springbootjpa.utils.RegisterRequest;
+
 
 import lombok.RequiredArgsConstructor;
+
 
 @RestController
 @RequestMapping("/api/v1/auth")

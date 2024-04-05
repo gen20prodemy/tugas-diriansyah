@@ -1,4 +1,4 @@
-package com.prodemy.springbootjpa.utils;
+package com.prodemy.springbootjpa.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

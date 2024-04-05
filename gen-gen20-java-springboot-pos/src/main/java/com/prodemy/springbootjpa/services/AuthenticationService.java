@@ -8,9 +8,9 @@ import org.springframework.stereotype.Service;
 import com.prodemy.springbootjpa.entity.UserApp;
 import com.prodemy.springbootjpa.entity.UserRole;
 import com.prodemy.springbootjpa.repository.UserRepos;
-import com.prodemy.springbootjpa.respon.AuthenticationResponse;
-import com.prodemy.springbootjpa.utils.AuthenticationRequest;
-import com.prodemy.springbootjpa.utils.RegisterRequest;
+import com.prodemy.springbootjpa.request.AuthenticationRequest;
+import com.prodemy.springbootjpa.request.RegisterRequest;
+import com.prodemy.springbootjpa.response.AuthenticationResponse;
 
 import lombok.RequiredArgsConstructor;
 
